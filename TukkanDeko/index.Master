@@ -1,0 +1,311 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="index.master.cs" Inherits="TukkanDeko.index" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Tükkan Dekorasyon</title>
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/x-icon" href="../images/icons/1.ico" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/linearicons-v1.0.0/icon-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/MagnificPopup/magnific-popup.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!--===============================================================================================-->
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="animsition">
+    <form id="form1" class="container-search-header" runat="server">
+
+        <!-- Header -->
+        <header class="header-v4">
+            <!-- Header desktop -->
+            <div class="container-menu-desktop">
+
+                <div class="wrap-menu-desktop how-shadow1">
+                    <nav class="limiter-menu-desktop container">
+
+                        <!-- Logo desktop -->
+                        <a href="../index.aspx" class="logo">
+                            <img src="images/logo/1.jpg" alt="IMG-LOGO">
+                        </a>
+
+
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Header Mobile -->
+            <div class="wrap-header-mobile">
+                <!-- Logo moblie -->
+                <div class="logo-mobile">
+                    <a href="index.html" class="logo">
+                        <img src="images/logo/1.jpg" alt="IMG-LOGO"></a>
+                </div>
+
+                <!-- Modal Search -->
+                <div class="modal-search-header flex-c-m trans-04 js-hide-modal-search">
+                    <div class="container-search-header">
+                        <button class="flex-c-m btn-hide-modal-search trans-04 js-hide-modal-search">
+                            <img src="images/icons/icon-close2.png" alt="CLOSE">
+                        </button>
+
+                            <button class="flex-c-m trans-04">
+                                <i class="zmdi zmdi-search"></i>
+                            </button>
+                            <input class="plh3" type="text" name="search" placeholder="Search...">
+                    </div>
+                </div>
+        </header>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+
+        <!-- Footer -->
+        <footer class="bg3 p-t-75 p-b-32">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-lg-4 p-b-50">
+                        <h4 class="stext-301 cl0 p-b-30">Kategoriler
+                        </h4>
+                        <asp:Repeater ID="rp_categories" runat="server">
+                            <ItemTemplate>
+                                <ul>
+                                    <li class="p-b-10">
+                                        <a href="#" class="stext-107 cl7 hov-cl1 trans-04"><%# Eval("Name") %>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </ItemTemplate>
+                        </asp:Repeater>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 p-b-50">
+                        <h4 class="stext-301 cl0 p-b-30">Destek
+                        </h4>
+
+                        <ul>
+                            <li class="p-b-10">
+                                <a href="https://wa.me/+905372596733" target="_blank" class="stext-107 cl7 hov-cl1 trans-04">Whatsapp Destek Hattı-1
+                                </a>
+                            </li>
+
+                            <li class="p-b-10">
+                                <a href="https://wa.me/+905455562298" target="_blank" class="stext-107 cl7 hov-cl1 trans-04">Whatsapp Destek Hattı-2
+                                </a>
+                            </li>
+
+                            <li class="p-b-10">
+                                <a href="mailto:hasanhuseyinbadak@hotmail.com" class="stext-107 cl7 hov-cl1 trans-04">Mail Destek
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 p-b-50">
+                        <h4 class="stext-301 cl0 p-b-30">BİLGİ
+                        </h4>
+
+                        <p class="stext-107 cl7 size-201">
+                            Herhangi bir sorunuz mu var?
+                            <br />
+                            Destek bölümünde yer alan <u>Whatsapp Destek Hattı</u> veya <u>Mail Destek</u> hattımızdan bizlere ulaşabilirsiniz.
+                        </p>
+
+                        <div class="p-t-27">
+                            <a href="#" target="_blank" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+
+                            <a href="https://www.instagram.com/tukkan.dekorasyon" target="_blank" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+
+                            <a href="https://www.tiktok.com/@tukkan.dekorasyon?is_from_webapp=1&sender_device=pc" class="fs-18 cl7 hov-cl1 trans-04 m-r-16" target="_blank">
+                                <i class="fab fa-tiktok fa-2x" style="font-size: 1em!important;"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/company/t%C3%BCkkan-dekorasyon" target="_blank" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="p-t-40">
+                    <div class="flex-c-m flex-w p-b-18">
+                        <a href="#" class="m-all-1">
+                            <img src="images/icons/icon-pay-01.png" alt="ICON-PAY">
+                        </a>
+
+                        <a href="#" class="m-all-1">
+                            <img src="images/icons/icon-pay-02.png" alt="ICON-PAY">
+                        </a>
+
+                        <a href="#" class="m-all-1">
+                            <img src="images/icons/icon-pay-03.png" alt="ICON-PAY">
+                        </a>
+
+                        <a href="#" class="m-all-1">
+                            <img src="images/icons/icon-pay-04.png" alt="ICON-PAY">
+                        </a>
+
+                        <a href="#" class="m-all-1">
+                            <img src="images/icons/icon-pay-05.png" alt="ICON-PAY">
+                        </a>
+                    </div>
+
+                    <p class="stext-107 cl6 txt-center">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+                        All rights reserved | Made with <a href="https://appsoly.com/" target="_blank">
+                            <img style="width: 10%" src="../images/logo/appsoly.png" /></a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+
+                    </p>
+
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- Back to top -->
+        <div class="btn-back-to-top" id="myBtn">
+            <span class="symbol-btn-back-to-top">
+                <i class="zmdi zmdi-chevron-up"></i>
+            </span>
+        </div>
+    </form>
+    <!--===============================================================================================-->
+    <script src="../vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="../vendor/animsition/js/animsition.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="../vendor/bootstrap/js/popper.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <script>
+        $(".js-select2").each(function () {
+            $(this).select2({
+                minimumResultsForSearch: 20,
+                dropdownParent: $(this).next('.dropDownSelect2')
+            });
+        })
+    </script>
+    <!--===============================================================================================-->
+    <script src="../vendor/daterangepicker/moment.min.js"></script>
+    <script src="../vendor/daterangepicker/daterangepicker.js"></script>
+    <!--===============================================================================================-->
+    <script src="../vendor/slick/slick.min.js"></script>
+    <script src="../js/slick-custom.js"></script>
+    <!--===============================================================================================-->
+    <script src="../vendor/parallax100/parallax100.js"></script>
+    <script>
+        $('.parallax100').parallax100();
+    </script>
+    <!--===============================================================================================-->
+    <script src="../vendor/MagnificPopup/jquery.magnific-popup.min.js"></script>
+    <script>
+        $('.gallery-lb').each(function () { // the containers for all your galleries
+            $(this).magnificPopup({
+                delegate: 'a', // the selector for gallery item
+                type: 'image',
+                gallery: {
+                    enabled: true
+                },
+                mainClass: 'mfp-fade'
+            });
+        });
+    </script>
+    <!--===============================================================================================-->
+    <script src="../vendor/isotope/isotope.pkgd.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="../vendor/sweetalert/sweetalert.min.js"></script>
+    <script>
+        $('.js-addwish-b2').on('click', function (e) {
+            e.preventDefault();
+        });
+
+        $('.js-addwish-b2').each(function () {
+            var nameProduct = $(this).parent().parent().find('.js-name-b2').html();
+            $(this).on('click', function () {
+                swal(nameProduct, "is added to wishlist !", "success");
+
+                $(this).addClass('js-addedwish-b2');
+                $(this).off('click');
+            });
+        });
+
+        $('.js-addwish-detail').each(function () {
+            var nameProduct = $(this).parent().parent().parent().find('.js-name-detail').html();
+
+            $(this).on('click', function () {
+                swal(nameProduct, "is added to wishlist !", "success");
+
+                $(this).addClass('js-addedwish-detail');
+                $(this).off('click');
+            });
+        });
+
+        /*---------------------------------------------*/
+
+        $('.js-addcart-detail').each(function () {
+            var nameProduct = $(this).parent().parent().parent().parent().find('.js-name-detail').html();
+            $(this).on('click', function () {
+                swal(nameProduct, "is added to cart !", "success");
+            });
+        });
+    </script>
+    <!--===============================================================================================-->
+    <script src="../vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script>
+        $('.js-pscroll').each(function () {
+            $(this).css('position', 'relative');
+            $(this).css('overflow', 'hidden');
+            var ps = new PerfectScrollbar(this, {
+                wheelSpeed: 1,
+                scrollingThreshold: 1000,
+                wheelPropagation: false,
+            });
+
+            $(window).on('resize', function () {
+                ps.update();
+            })
+        });
+    </script>
+    <!--===============================================================================================-->
+    <script src="../js/main.js"></script>
+
+</body>
+</html>
