@@ -50,7 +50,7 @@ namespace TukkanDeko.AdminBilge
                     if (fu_picture1.HasFile)
                     {
                         FileInfo fi = new FileInfo(fu_picture1.FileName);
-                        if (fi.Extension == ".jpg" || fi.Extension == ".png" || fi.Extension == ".jpeg")
+                        if (fi.Extension == ".jpg" || fi.Extension == ".png" || fi.Extension == ".jpeg" || fi.Extension == ".JPG")
                         {
                             string uzanti = fi.Extension;
                             string isim = Guid.NewGuid().ToString();
@@ -70,7 +70,7 @@ namespace TukkanDeko.AdminBilge
                     if (fu_picture2.HasFile)
                     {
                         FileInfo fi = new FileInfo(fu_picture2.FileName);
-                        if (fi.Extension == ".jpg" || fi.Extension == ".png" || fi.Extension == ".jpeg")
+                        if (fi.Extension == ".jpg" || fi.Extension == ".png" || fi.Extension == ".jpeg" || fi.Extension == ".JPG")
                         {
                             string uzanti = fi.Extension;
                             string isim = Guid.NewGuid().ToString();
@@ -90,7 +90,7 @@ namespace TukkanDeko.AdminBilge
                     if (fu_picture3.HasFile)
                     {
                         FileInfo fi = new FileInfo(fu_picture3.FileName);
-                        if (fi.Extension == ".jpg" || fi.Extension == ".png" || fi.Extension == ".jpeg")
+                        if (fi.Extension == ".jpg" || fi.Extension == ".png" || fi.Extension == ".jpeg" || fi.Extension == ".JPG")
                         {
                             string uzanti = fi.Extension;
                             string isim = Guid.NewGuid().ToString();
