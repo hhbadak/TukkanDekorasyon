@@ -614,6 +614,45 @@ namespace DataAccessLayer
             }
         }
 
+
+        public List<Product> ProductListPhoneStand()
+        {
+            List<Product> pro = new List<Product>();
+            try
+            {
+                cmd.CommandText = "SELECT p.ID, p.Name, p.Description, c.Name, p.Price, p.Width, p.Length, p.Height, p.Weight, p.Barcode, p.Image1, f.Name, p.TotalPrice FROM Product AS p\r\nJOIN Category AS c ON c.ID = p.CategoryID\r\nJOIN Filament AS f ON f.ID = p.FilamentID WHERE c.ID = 9";
+                cmd.Parameters.Clear();
+                con.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    Product p = new Product();
+                    p.ID = reader.GetInt32(0);
+                    p.Name = reader.GetString(1);
+                    p.Description = reader.GetString(2);
+                    p.Category = reader.GetString(3);
+                    p.Price = reader.GetDecimal(4);
+                    p.Width = reader.GetString(5);
+                    p.Length = reader.GetString(6);
+                    p.Height = reader.GetString(7);
+                    p.Weight = reader.GetDecimal(8);
+                    p.Barcode = reader.GetString(9);
+                    p.Image1 = reader.GetString(10);
+                    p.Filament = reader.GetString(11);
+                    p.TotalPrice = reader.GetDecimal(12);
+                    pro.Add(p);
+                }
+                return pro;
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
         #endregion
 
         #region Filament Metot

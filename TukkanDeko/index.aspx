@@ -39,6 +39,10 @@
                     <button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".garden">
                         Bahçe Gereçleri
                     </button>
+
+                     <button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".phonestand">
+                        Telefon Tutacağı
+                    </button>
                 </div>
 
                 <asp:Repeater ID="rp_keychain" runat="server">
@@ -187,6 +191,29 @@
                 </asp:Repeater>
 
                 <asp:Repeater ID="rp_garden" runat="server">
+                    <ItemTemplate>
+                        <div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item garden">
+                            <!-- Block2 -->
+                            <div class="block2">
+                                <div class="block2-pic hov-img0">
+                                    <img src="../images/product/<%# Eval("Image1") %>" loading="lazy" style="max-width: 423px; max-height: 423px;" alt="<%# Eval("Name") %>">
+                                    <a href='productDetail.aspx?mid=<%# Eval("ID") %>' class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04">İncele
+                                    </a>
+                                </div>
+                                <div class="block2-txt flex-w flex-t p-t-14">
+                                    <div class="block2-txt-child1 flex-col-l ">
+                                        <span class="stext-105 cl3"><%# Eval("Name") %>
+                                        </span>
+                                        <span class="stext-105 cl3"><%# Eval("TotalPrice") %>₺
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </ItemTemplate>
+                </asp:Repeater>
+
+                <asp:Repeater ID="rp_phonestand" runat="server">
                     <ItemTemplate>
                         <div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item garden">
                             <!-- Block2 -->

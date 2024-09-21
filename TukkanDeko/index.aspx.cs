@@ -45,6 +45,9 @@ namespace TukkanDeko
             rp_garden.DataSource = dm.ProductListGarden();
             rp_garden.DataBind();
 
+            rp_phonestand.DataSource = dm.ProductListPhoneStand();
+            rp_phonestand.DataBind();
+
         }
 
 

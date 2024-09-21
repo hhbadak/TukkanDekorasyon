@@ -10,3 +10,9 @@ C:\Users\HsnHs\Downloads\kkk\TukkanDeko\TukkanDeko\DataAccessLayer\obj\Debug\Dat
 C:\Users\HsnHs\Downloads\kkk\TukkanDeko\TukkanDeko\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
 C:\Users\HsnHs\Downloads\kkk\TukkanDeko\TukkanDeko\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 C:\Users\HsnHs\Downloads\kkk\TukkanDeko\TukkanDeko\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+C:\Users\HsnHs\OneDrive\Belgeler\GitHub\TukkanDekorasyon\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\HsnHs\OneDrive\Belgeler\GitHub\TukkanDekorasyon\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\HsnHs\OneDrive\Belgeler\GitHub\TukkanDekorasyon\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\HsnHs\OneDrive\Belgeler\GitHub\TukkanDekorasyon\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\HsnHs\OneDrive\Belgeler\GitHub\TukkanDekorasyon\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\HsnHs\OneDrive\Belgeler\GitHub\TukkanDekorasyon\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
